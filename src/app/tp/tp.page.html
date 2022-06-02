@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Trending Places</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div *ngFor="let item of tp" lines="none">
+<ion-card>
+  <img src={{item.image}} />
+  <ion-card-header>
+    <ion-card-subtitle>{{item.subtitle}}</ion-card-subtitle>
+    <ion-card-title>{{item.title}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{item.description}}
+      
+  
+  </ion-card-content>
+ </ion-card>
+</div>
+
+
+</ion-content>
